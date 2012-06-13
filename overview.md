@@ -56,9 +56,7 @@ Popper's goal is to address the above four problems. It will streamline the proc
 
 ## <a name="ThePlumbing" id="anchor5">The Plumbing ##
 
-# Popper 
-
-The platform consists of four pieces: 
+Popper platform consists of four pieces: 
 
 1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
 
@@ -72,6 +70,8 @@ The platform consists of four pieces:
 Below is a diagram showing the general architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
 
 <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)</a>
+
+Typical workflow:
 
 1. <font color="5185E8">Researcher</font> downloads the <font color="5C878F">Popper SDK</font> from <font color="5C878F">Github</font> using his desktop <font color="5C878F">Github</font> client. 
 
