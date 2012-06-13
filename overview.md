@@ -1,6 +1,6 @@
 # Popper Brief 
 
-## Table of Contents ##
+## Table of Contents
 
 -	[Introduction](#Introduction)
 	
@@ -16,7 +16,7 @@
 
 **Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create an conduct complex large-scale online experiments. 
 
-### Social scientists are interested in studying human behavior, and developing theories explaining it. ###
+### Social scientists are interested in studying human behavior, and developing theories explaining it.
 
 Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
 
