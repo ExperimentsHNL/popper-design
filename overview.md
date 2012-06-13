@@ -16,30 +16,26 @@
 
 **Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create an conduct complex large-scale online experiments. 
 
-### Social scientists are interested in studying human behavior, and developing theories explaining it.
 
-Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
+### Role of experiments
 
-### Conducting controlled experiments in social sciences is difficult. 
+ Social scientists are interested in studying human behavior, and developing theories explaining it. Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
 
-Unlike natural scientists who conduct their experiments with inanimate objects, social scientists experiment with live human beings. Human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects engange in simple decision tasks for $15-25/hour, and sometimes more depending on their performance. 
+### Classical experiments
+
+Conducting controlled experiments in social sciences is difficult. Unlike natural scientists who conduct their experiments with inanimate objects, social scientists experiment with live human beings. Human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects engange in simple decision tasks for $15-25/hour, and sometimes more depending on their performance. 
 
 This approach has three serious limitations: 
 
-1. It is very costly (per-trial subject payments start at $500-1000). 
+1. It is very costly as it requires an equipped brick and mortar laboratory, and significant subject payments that typically exceed $500-1000 per trial. 
 
-2. It is time-consuming, and requires recruiting local human subjects well in advance of the trial. 
+2. It is time-consuming, and requires recruiting local human subjects more than a week in advance of the trial. 
 
 3. Local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
 
-Apart from that, tbe software available to physical labs use very outdated software to create and conduct experiments. The main software package used for these purposes is [z-Tree](http://www.iew.uzh.ch/ztree/index.php) which was created in the University of Zurich in the late 1990s and hasn't been updated since then.
+Apart from that, the software used in physical labs to create and conduct experiments is very outdated. The most popular package, [z-Tree](http://www.iew.uzh.ch/ztree/index.php), was created in the University of Zurich in the late 1990s and hasn't been updated since then.
 
-Next, she must find a multi-million dollar social science experiments laboratory 
-and then several weeks securing enough subjects to run her trial. This process 
-often takes several weeks. Some of her subjects might not show up, and Rina 
-might have to recruit subjects a second or third time until enough people have 
-participated. More weeks pass.
-
+### Online experiments
 
 In the last 2-3 years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments, asexperimental subjects are no longer required to come to a physical lab, and can participate in trials from the comfort of their home.
 
@@ -53,7 +49,9 @@ However, move to online trials imposes several additional constraints on experim
 
 4. Lower degree of control over the experimental conditions. Subjects can potentially communicate with each other, collude, and cheat in other ways which undermines the internal validity of the experiment.
 
-**Popper's** goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. **Popper** will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
+### Popper
+
+Popper's goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. Popper will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
 
 
 Using the Popper SDK, Rina creates an experiment using [uScript](http://forum.unity3d.com/threads/84594-Introducing-the-uScript-Visual-Scripting-Tool-for-Unity!), 
