@@ -1,3 +1,5 @@
+
+
 ![image](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)
 
 1. Researcher downloads the Popper SDK from Github using their desktop Github client. 
