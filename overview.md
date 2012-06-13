@@ -41,32 +41,19 @@ might have to recruit subjects a second or third time until enough people have
 participated. More weeks pass.
 
 
-In the last 3 years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments because experimental subjects are no longer required to come to a physical lab, and can participate in the trials in the comfort of their home.
+In the last 2-3 years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments, asexperimental subjects are no longer required to come to a physical lab, and can participate in trials from the comfort of their home.
 
-However, most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
+However, move to online trials imposes several additional constraints on experimental design:
 
-While helping to reduce cost, and to increase subject availability, also impose two additional constraints 
-Even though online trials have been able to add While addressing some of the limitations of 
+1. Lack of software. Most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
 
-1. Comprehension.
+2. Low comprehension rates of written instructions. Online subjects frequently skim, or even ignore written experimental instructions.
 
-2. Attrition. 
+3. High subject attrition rates. Even though in a physical lab subjects are allowed to quite the trial at any moment, doing so involves what is usually an uncomfortable interaction with the experimenter, while online subjects can quit a trial by simply closing a browser tab. This leads to very high attrition rates in trials where subjects get bored.
 
+4. Lower degree of control over the experimental conditions. Subjects can potentially communicate with each other, collude, and cheat in other ways which undermines the internal validity of the experiment.
 
-**Popper's** goal is to streamline the process of creating the 
-
-# Popper 
-
-It consists of four pieces: 
-
-1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
-
-2. **Experiments Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
-
-3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
-
-4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
-
+**Popper's** goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. **Popper** will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
 
 
 Using the Popper SDK, Rina creates an experiment using [uScript](http://forum.unity3d.com/threads/84594-Introducing-the-uScript-Visual-Scripting-Tool-for-Unity!), 
@@ -93,8 +80,19 @@ experimental economics and then wins the Nobel Prize.
 
 ## <a name="ThePlumbing" id="anchor5">The Plumbing ##
 
-Popper consts of several different pieces. Below is a diagram showing the 
-architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
+# Popper 
+
+The platform consists of four pieces: 
+
+1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
+
+2. **Experiments Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
+
+3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
+
+4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
+
+Below is a diagram showing the architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
 
 <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)</a>
 
