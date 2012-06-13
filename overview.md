@@ -4,7 +4,9 @@
 
 -	[Introduction](#Introduction)
 	
--	[The Plumbing](#ThePlumbing)
+-	[Overview of Popper Platform](#PopperOverview)
+
+-   [Development Team](#DevelopmentTeam)
 
 -	[Unity Programmer Brief](UnityProgrammerBrief)
 
@@ -54,7 +56,7 @@ However, move to online trials imposes several additional constraints on experim
 Popper's goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. Popper will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
 
 
-## <a name="ThePlumbing" id="anchor5">The Plumbing ##
+## <a name="PopperOverview" id="anchor5">Overview of Popper Platform
 
 Popper platform consists of four pieces: 
 
@@ -108,6 +110,10 @@ Typical workflow:
 17. <font color="5185E8">Researcher</font> monitors the ongoing trial in his browser. Once the trial ends, <font color="5185E8">Researcher</font> reviews and approves subject payments.
 
 18. The <font color="5C878F">Popper Web Service</font> posts payments to <font color="DB563B">players'</font> accounts. 
+
+
+## <a name="DevelopmentTeam" id="anchor0">Development Team</a>
+
 
 ### Role 1: Unity Programmer ###
 
