@@ -281,9 +281,10 @@ A clear link or button next to the experiment should allow the researcher to
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_trial.png?raw=true)
 
-Once the researcher selects an experiment, she can specify the parameters of the trial that she would like to launch to run this experiment. Again, researchers without an account cannot access this page and will be redirected to the Signup page instead. 
+Once the researcher selects an experiment, she is shown a dynamically constructed form with the list of input parameters that the experiment accepts. Just as descriptions of experiments in the Library, this list of input acceptable input parameters is taken from the metadata that accompanies the source code of the experiment. Typically these parameters would include the necessary number of players, initial endowments of players, exchange rate from points to dollars, relevant subject pool, etc.
 
-The researcher should be able to specify her subject pool, the start and end date of the trial, payment amounts for subjects, the frame of the experiment (in other words, the type of game that her subjects actually see), and select details relating to the frame of the experiment. 
+Again, researchers without an account cannot access this page and will be redirected to the Signup page instead. 
+
 
 #### 6. About 
 
@@ -296,17 +297,23 @@ Just a stock about page using the same template as the Landing Page.
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_profile.png?raw=true)
 
 The Researcher Profile consists of the information that the researcher provided during the signup 
-process as well as privacy settings.
+process as well as privacy settings, payment method, linked accounts (GitHub, Facebook, Twitter, etc).
+
+Researcher Profile page also contains the history of all trials ever created by a given researcher.
 
 #### 8. Monitor Trials 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_monitor.png?raw=true)
 
-The researcher can find out more information about a trial displayed in the Trial Feed in the Researcher Dashboard by clicking on the trial. This takes her to the Monitor Trials page, which includes more specific information about the selected trial. 
+By default, upon creating a trial, researcher is taken to the monitoring page of this trial.
 
-What the researcher sees depends on the current status of the trial. If it is Awaiting Launch, the researcher will be taken instead to the Create Trial page. If it is Ongoing, she will be able to see the profiles of players who are participating in her game as well as realtime results. If the trial displays Payment Pending in the Researcher Dashboard, the researcher will see payment authorization fields that are linked to whichever labor market that provided 
-her subjects--for the time being, either Amazon Mechanical Turk or oDesk. If the trial is Completed, the researcher can see the profiles of players and download the results log from 
-the trial. 
+Alternatively, the researcher can find out more information about any trial displayed in the Trial List  in the Researcher Dashboard by clicking on the trial. This also takes her to the Monitor Trials page, which includes more specific information about the selected trial. 
+
+Exact layout of the Monitor Trials page is dynamically constructed based on the metadata accompanying the experiment. Metadata describes what kinds of events can happen and what kind of data about the trial will be available during runtime. Typically, monitoring page displays trial status, the list of players (researcher should be able to click on individual players and review their profiles) realtime choices made by the players, round number, players' earnings, etc.
+
+Once the trial is over, the researcher gets to see and manually approve all pending payments to players on the monitoring page.
+
+Researcher can also download the complete log of the game in CSV format from the monitoring page.
 
 #### <font color="red">Caution!</font> 
 
@@ -324,7 +331,7 @@ the trial.
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_signup.png?raw=true)
 
-Players will not be able to see available games (trials) unless they are signed in. We would liketo know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially 
+Players will not be able to see available games (trials) unless they are signed in. We need to know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially 
 since the player is most likely already arriving from an external site (Amazon Mechanical Turk or oDesk). The player should thus be able to create an account using an existing Facebook or Twitter account. The signup page should also be miminalistic in terms of data gathered from the player, asking only for a username, password, and the player's age. More in-depth demographic
 information will be gathered later, once the player has created an account--perhaps on a separate page, using the same template. This information will be used to determine which trials are visible to the player in the Lobby (2). 
 
@@ -334,14 +341,14 @@ Players who already have an account will use this page to log in.
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_lobby.png?raw=true)
 
-Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials). The graphics and UI/UX should compel the player to want to stay on the website to play a lot of games. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies 
-each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. Only games that match the player's demographics will be visible.
+Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials) for which they meet eligibility requirements (sometimes researchers will restrict participation in their trials by age, gender, geographic location, connection speed etc). The graphics and UI/UX should compel the player to want to stay on the website to play a lot of games. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies 
+each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. All this information is dynamically pulled by the web application from the corresponding metadata on GitHub
 
 #### 3. Game 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_game.png?raw=true)
 
-The player plays the game on this page. 
+The player plays the game on this page. The game is embedded as an iframe, and its design is the responsibility of the researcher.
 
 #### 4. About 
 
