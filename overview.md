@@ -115,28 +115,26 @@ Typical workflow:
 ## <a name="DevelopmentTeam" id="anchor0">Development Team</a>
 
 
-### Role 1: Unity Programmer ###
+### Unity Programmer
 
-The Unity Programmer works with us to build on top of existing Popper code. 
-This work involves the Unity, uScript, and Photon Server components of the Popper 
-SDK. 
+Unity Programmer develops a robust Popper SDK based on Unity 3D, uScript, and Photon Networking; and creates sample experiments that illustrate the capabilities of the SDK. 
 
 Go to the [Unity Programmer Brief](#UnityProgrammerBrief). 
 
-### Role 2: Web Developer ###
+### Unity Designer
 
-The Web Developer works with us to integrate the experiments deployed on 
-GitHub with the Ruby server. Popper consists of two websites: 1. Popper Dock, 
-which is where the researcher launches and monitors experiments, and 2. the 
-Game Website, where subjects play online games. 
+Unity Designer creates graphical assets and templates of Unity scenes for researchers to use in their experiments. Designer also adapts existing games from the Unity Asset store for use in experimental setting.
+
+
+### Web Developer
+
+Web Developer works on the backend of the core web application that handles launch, execution and monitoring of experimental trials.
 
 Go to the [Web Developer Brief](#WebDeveloperBrief). 
 
-### Role 3: Web Designer ###
+### Web Designer
 
-The Web Designer works with us to design the UI/UX of the two website components 
-of Popper: Popper Dock (for researchers) and the Game Website. The designer 
-also works with us on the branding and logo of Popper.
+Web Designer creates the logos, the UI/UX, and the front-end code for the Researcher Site, and the Player Site. 
 
 Go to the [Web Designer Brief](#WebDesignerBrief). 
 
