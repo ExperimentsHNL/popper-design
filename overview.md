@@ -380,6 +380,14 @@ possible and keep them on the site playing games for as long as possible.
 There will be no links connecting Popper Dock to the Game Website, so no 
 thematic or design similarities between the two sites are necessary. 
 
+### Logo
+
+1. The Popper Platform is named after [Karl Popper](http://en.wikipedia.org/wiki/Karl_Popper), a major philosopher of science in the 20th century, who established the modern practice of hypothesis testing. Given that the work "Popper" has multiple meanings, it is important for us that the logo conveys a clear association with Karl Popper, and is not confused with the action of "popping" or drugs. We would prefer to have an stylized image of Karl Popper as part of the logo.
+
+2. Popper will be used by social scientists, not natural scientists. All images and logos should avoid any allusions to the natural sciences, such as test tubes, atoms, microscopes, as well as brains, light bulbs, etc. 
+
+3. The Popper logo should work with both a dark and light background since it will be used both on the site (which will probably be light-colored) and within the Unity/uScript environment (which is dark).
+
 ### Researcher Website 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_base.png?raw=true)
