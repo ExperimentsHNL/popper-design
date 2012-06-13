@@ -25,9 +25,11 @@ run **online experiments** to study human behavior. It consists of four pieces:
 
 4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
 
-### Social scientists are interested in studying human behavior, and developing theories explaining it. Experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories ###
+### Social scientists are interested in studying human behavior, and developing theories explaining it. ###
 
-### Testing human behavior is hard... ###
+Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
+
+### Conducting controlled experiments with humans is difficult.###
 
 ...but not because of a lack of data. After all, humans make tens of thousands
 of decisions every day. Social scientists only have to capture a few of these
