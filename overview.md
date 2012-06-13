@@ -4,7 +4,7 @@
 
 -	[Introduction](#Introduction)
 	
--	[Overview of Popper Platform](#PopperOverview)
+-	[Platform Overview](#PlatformOverview)
 
 -   [Development Team](#DevelopmentTeam)
 
@@ -56,7 +56,7 @@ However, move to online trials imposes several additional constraints on experim
 Popper's goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. Popper will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
 
 
-## <a name="PopperOverview" id="anchor5">Overview of Popper Platform
+## <a name="PlatformOverview" id="anchor5">Platform Overview of Popper Platform</a>
 
 Popper platform consists of four pieces: 
 
