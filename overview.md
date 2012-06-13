@@ -29,11 +29,15 @@ run **online experiments** to study human behavior. It consists of four pieces:
 
 Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
 
-### Conducting controlled experiments with humans is difficult.###
+### Conducting controlled experiments in social sciences is difficult.### 
 
-...but not because of a lack of data. After all, humans make tens of thousands
-of decisions every day. Social scientists only have to capture a few of these
-decisions in a controlled setting. This data is hard to collect because of two main reasons: 
+Unlike natural scientists who conduct their experiments with inanimate objects, social scientists have to use human subjects. For ethical reasons human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects perform simple decision tasks for $15-20/hour, and sometimes more depending on their performance. 
+
+This approach has three serious limitations. First, it is very costly (per-trial subject payments start at $500-1000). Second, it is time-consuming, and requires recruiting local human subjects well in advance of the trial. Finally, local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
+
+
+
+This data is hard to collect because of two main reasons: 
 money and time. 
 
 Let's take a look at an example. Say Rina the Economist wants to study when 
