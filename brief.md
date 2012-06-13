@@ -1,4 +1,4 @@
-# Popper Brief # 
+# Popper Brief 
 
 ## Table of Contents ##
 
