@@ -14,27 +14,25 @@
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
-**Popper** is a platform that allows social science researchers to create and 
-run **online experiments** to study human behavior. It consists of four pieces: 
-
-1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
-
-2. **Experiments Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
-
-3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
-
-4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
+**Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create an conduct complex large-scale online experiments. 
 
 ### Social scientists are interested in studying human behavior, and developing theories explaining it. ###
 
 Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
 
-### Conducting controlled experiments in social sciences is difficult.### 
+### Conducting controlled experiments in social sciences is difficult. ### 
 
-Unlike natural scientists who conduct their experiments with inanimate objects, social scientists have to use human subjects. For ethical reasons human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects perform simple decision tasks for $15-20/hour, and sometimes more depending on their performance. 
+Unlike natural scientists who conduct their experiments with inanimate objects, social scientists experiment with live human beings. Human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects engange in simple decision tasks for $15-25/hour, and sometimes more depending on their performance. 
 
-This approach has three serious limitations. First, it is very costly (per-trial subject payments start at $500-1000). Second, it is time-consuming, and requires recruiting local human subjects well in advance of the trial. Finally, local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
+This approach has three serious limitations: 
 
+1. It is very costly (per-trial subject payments start at $500-1000). 
+
+2. It is time-consuming, and requires recruiting local human subjects well in advance of the trial. 
+
+3. Local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
+
+Apart from that, tbe software available to physical labs use very outdated software to create and conduct experiments. The main software package used for these purposes is [z-Tree](http://www.iew.uzh.ch/ztree/index.php) which was created in the University of Zurich in the late 1990s and hasn't been updated since then.
 
 
 This data is hard to collect because of two main reasons: 
@@ -65,6 +63,22 @@ What if a trial could take 1 day instead of several months? What if each trial
 cost a few hundred dollars rather than several thousand?
 
 Along comes Popper to the rescue!
+
+
+
+It consists of four pieces: 
+
+1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
+
+2. **Experiments Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
+
+3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
+
+4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
+
+
+
+
 
 Using the Popper SDK, Rina creates an experiment using [uScript](http://forum.unity3d.com/threads/84594-Introducing-the-uScript-Visual-Scripting-Tool-for-Unity!), 
 an intuitive visual scripting tool. She does not need to know a single line of 
