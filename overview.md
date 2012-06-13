@@ -16,57 +16,55 @@
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
-**Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create an conduct complex large-scale online experiments. 
+**Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create and conduct complex large-scale online experiments. 
 
+### Role of experiments in the social sciences
 
-### Role of experiments
-
- Social scientists are interested in studying human behavior, and developing theories explaining it. Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
+ Social scientists are interested in studying human behavior. They develop theories to explain this behavior and conduct controlled experiments to test these theories. In order for a theory to be "testable", it must produce predictions (hypotheses) about human behavior that can, in principle, be proven wrong. Thus, the process of experimentation results in the falsification of inaccurate theories. 
 
 ### Classical experiments
 
-Conducting controlled experiments in social sciences is difficult. Unlike natural scientists who conduct their experiments with inanimate objects, social scientists experiment with live human beings. Human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects engange in simple decision tasks for $15-25/hour, and sometimes more depending on their performance. 
+Conducting controlled experiments in the social sciences is difficult. Unlike natural scientists, who often conduct their experiments with inanimate objects, social scientists experiment exclusively with live human beings. Human subjects cannot be forced to participate in experiments and can also quit an ongoing experimental trial at any point. For these reasons, researchers must pay human subjects to convince them to participate in and complete a trial. These trials are typically run in physical laboratories, where invited volunteer subjects engage in simple decision tasks for $15-25/hour--and sometimes more depending on their performance. 
 
 This approach has three serious limitations: 
 
-1. It is very costly as it requires an equipped brick and mortar laboratory, and significant subject payments that typically exceed $500-1000 per trial. 
+1. It is very expensive, requiring an equipped brick-and-mortar laboratory and significant subject payments that often exceed $500-1000 per trial. 
 
-2. It is time-consuming, and requires recruiting local human subjects more than a week in advance of the trial. 
+2. It is time-consuming and requires recruiting local human subjects more than a week in advance of the trial. 
 
 3. Local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
 
-Apart from that, the software used in physical labs to create and conduct experiments is very outdated. The most popular package, [z-Tree](http://www.iew.uzh.ch/ztree/index.php), was created in the University of Zurich in the late 1990s and hasn't been updated since then.
+In addition, the software used in physical labs to create and conduct experiments is very outdated. The most popular package, [z-Tree](http://www.iew.uzh.ch/ztree/index.php), was created in the University of Zurich in the late 1990s and hasn't been updated since then.
 
 ### Online experiments
 
-In the last 2-3 years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments, asexperimental subjects are no longer required to come to a physical lab, and can participate in trials from the comfort of their home.
+In the last 2-3 years, researchers have started conducting experiments online, using subjects from various online labor markets, most notably [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool and decreased subject payments. Now, experimental subjects can participate in trials from the comfort of their own home rather than coming to a physical lab.
 
-However, move to online trials imposes several additional constraints on experimental design:
+However, the move to online trials introduces several new challenges:
 
-1. Lack of software. Most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
+1. **Lack of software.** Most online trials have so far been technologically limited to survey-style tasks that do not involve realtime interaction between subjects. The researchers who do conduct multiplayer studies have had to write from scratch their own ad hoc software. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
 
-2. Low comprehension rates of written instructions. Online subjects frequently skim, or even ignore written experimental instructions.
+2. **Low comprehension rates of written instructions.** Online subjects frequently skim, or even ignore, written experimental instructions.
 
-3. High subject attrition rates. Even though in a physical lab subjects are allowed to quite the trial at any moment, doing so involves what is usually an uncomfortable interaction with the experimenter, while online subjects can quit a trial by simply closing a browser tab. This leads to very high attrition rates in trials where subjects get bored.
+3. **High subject attrition rates.** Online subjects can quit a trial simply by closing a browser tab, with few consequences. This leads to very high attrition rates, especially in trials where subjects become bored. Even though subjects in a physical lab are also allowed to quit the trial at any moment, doing so usually involves an uncomfortable interaction with the researcher. 
 
-4. Lower degree of control over the experimental conditions. Subjects can potentially communicate with each other, collude, and cheat in other ways which undermines the internal validity of the experiment.
+4. **Lower degree of control over the experimental conditions.** Subjects can communicate with each other, collude, and cheat in other ways that undermine the [internal validity](http://en.wikipedia.org/wiki/Internal_validity) of the experiment.
 
 ### Popper
 
-Popper's goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. Popper will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
-
+The goal of Popper is to address the above four problems. It seeks to streamline the process of creating complex and visually compelling multiplayer experiments. Through Popper, researchers will use professional game development tools, which include visual scripting and an extensive library of template game assets. Popper will also provide researchers with extensive subject monitoring capabilites to minimize the possibility of cheating and other runtime irregularities.
 
 ## <a name="PlatformOverview" id="anchor5">Platform Overview of Popper Platform</a>
 
-Popper platform consists of four pieces: 
+Popper consists of four pieces: 
 
-1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
+1. **Popper Software Development Kit (SDK)** -- a set of tools based on the Unity 3D game engine. The reseacher uses the Popper SDK on their local computer to design experiments in the form of short multiplayer games.
 
-2. **Experiment Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
+2. **Experiment Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments.
 
-3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiment Library**;
+3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on experiments available in the **Experiment Library**.
 
-4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
+4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by researchers.
 
 
 Below is a diagram showing the general architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
@@ -117,28 +115,27 @@ Typical workflow:
 
 ### Unity Programmer
 
-Unity Programmer develops a robust Popper SDK based on Unity 3D, uScript, and Photon Networking; and creates sample experiments that illustrate the capabilities of the SDK. 
+The Unity Programmer develops a robust Popper SDK based on Unity 3D, uScript, and Photon Networking. He/she works with us to create sample experiments that illustrate the capabilities of the SDK. 
 
 Go to the [Unity Programmer Brief](#UnityProgrammerBrief). 
 
 ### Unity Designer
 
-Unity Designer creates graphical assets and templates of Unity scenes for researchers to use in their experiments. Designer also adapts existing games from the Unity Asset store for use in experimental setting.
-
+The Unity Designer creates graphical assets and templates of Unity scenes for researchers to use in their experiments. The designer also adapts existing games from the Unity Asset store for use in an experimental setting.
 
 ### Web Developer
 
-Web Developer works on the backend of the core web application that handles launch, execution and monitoring of experimental trials.
+The Web Developer works on the backend of the core web application that handles the launch, execution and monitoring of experimental trials.
 
 Go to the [Web Developer Brief](#WebDeveloperBrief). 
 
 ### Web Designer
 
-Web Designer creates the logos, the UI/UX, and the front-end code for the Researcher Site, and the Player Site. 
+The Web Designer creates the logos, UI/UX, and front-end code for the Researcher Site and the Player Site. 
 
 Go to the [Web Designer Brief](#WebDesignerBrief). 
 
-## <a name="UnityProgrammerBrief" id="anchor1">Unity Programmer Brief</a> ##
+## <a name="UnityProgrammerBrief" id="anchor1">Unity Programmer/Developer Brief</a> ##
 
 In progress.
 
@@ -192,7 +189,7 @@ Do this, this, then that.
  -->
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
-As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: Researcher Site, and Player Site. The former allows researchers to launch, execute and monitor trials, while the latter serves as a hub for players who participate in the available trials on the site.
+As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
 
 ### Researcher Site 
 
@@ -202,7 +199,7 @@ As mentioned in the Platform Overview section above, researchers and players int
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_landing.png?raw=true)
 
-The purpose of the landing page is to introduce the researcher to Popper Platform and encourage her to sign up. 
+The purpose of the landing page is to introduce the researcher to the Popper Platform and encourage her to sign up. 
 
 On this page the researcher should see:
 
@@ -210,11 +207,11 @@ On this page the researcher should see:
 
 - highlights of the platform (key features, advantages);
 
-- list of logos/shields of prominent clients using Popper;
+- a list of logos/shields of prominent clients using Popper;
 
-- navigation panel with sections About, Experiment Library, Documentation (hosted externally on GitHub), Sign up. 
+- a navigation panel with links to About, Experiment Library, Documentation (hosted externally on GitHub), and Sign up. 
 
-The navigation bar should be consistent and available (along with Popper logo) throughout the entire website. (If a researcher is logged in, Sign Up section is replaced with their username, and they see an additional section "Download" that leads to one of the documentation pages on GitHub with the list of steps necessary to download Popper SDK)
+The navigation bar should be consistent and available (along with the Popper logo) throughout the entire website. If a researcher is logged in, the Sign Up link is replaced with their username, and they see an additional "Download" link. This link leads leads to one of our Documentation pages on GitHub, featuring the steps necessary to download the Popper SDK.
 
 #### 2. Signup 
 
@@ -222,7 +219,7 @@ The navigation bar should be consistent and available (along with Popper logo) t
 
 The Signup page allows the researcher to create a Popper account and go through the steps necessary to begin running experiments online. 
 
-Signup form should containt the following fields:
+The Signup form should contain the following fields:
 
 - full name;
 
@@ -237,17 +234,17 @@ Signup form should containt the following fields:
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_dashboard.png?raw=true)
 
-Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher has an overview of all her trials and experiments that she is following. She should see two main sections in her Dashboard: the Feed and the list of their Trials.  
+Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher can see an overview of all her trials, as well as experiments that she is following. The Dashboard is divided into two main sections: the Feed and the list of their Trials.  
 
 **Feed**
 
-The Feed contains all important events associated with researcher's activity within Popper: creation of trials, completion of trials, pending payments, changes to the experiments that the researcher follows on GitHub etc.
+The Feed contains all important events associated with researcher's activity within Popper: creation of trials, completion of trials, pending payments, changes to the experiments that the researcher follows on GitHub, etc.
 
 To clarify, the word **experiment** refers to the software (source code and binary files) created by the researcher on their local computer and stored in the Experiment Library on GitHub. The word **trial** refers to a particular run of an experiment, initiated by a researcher through the Researcher Site.
 
 Researchers may choose to run trials using experiments that other researchers have already designed and made publicly available. The idea is for researchers to be able to share experiments with each other. 
 
-Researchers also frequently outsource running of their experiments to research hired assistants, who would not be involved in designing the experiment, but who would merely initiate and monitor trials based on the experiment created by their supervisor.
+Researchers often hire research assistants to run trials of their experiments. These research assistants would not be involved in designing the experiment and would only initiate and monitor trials.
 
 **List of Trials**
 
@@ -268,23 +265,21 @@ Each trial on this list should be accompanied by the following information:
 
 The Experiment Library includes a list of all available experiments. We plan to launch with six stock experiments, each of which can be run with a different frame. The experiments should each be accompanied by an appropriate image, which we will provide. 
 
-Two audiences are served by the Experiment Library. 1. Users without an account can browse the Library, but cannot initiate a trial. If they attempt to do so, they should be prompted to create an account. 2. Researchers with an account can use the Experiment Library to select an experiment within which to launch a trial.
+Two audiences are served by the Experiment Library. 1. Users without an account can browse the Library, but cannot initiate a trial. If they attempt to do so, they are prompted to create an account. 2. Researchers with an account can use the Experiment Library to select an experiment with which to launch a trial.
 
-The list of available experiments is generated dynamically by the web application. It looks up GitHub repositories with experiments to which the user has access, and displays formatted descriptions of those experiments based on the metadata contained in corresponding  GitHub repositories. E
+The list of available experiments is generated dynamically by the web application. It looks up GitHub repositories with experiments to which the user has access, and displays formatted descriptions of those experiments based on the metadata contained in corresponding  GitHub repositories.
 
-This process assumes that researchers would supply the relevant metadata (e.g. screenhsots, title of the experiment, list of available input parameters etc) along with the source code of the experiments that they create.
+We would like to encourage researchers to share details about the experiments that they create with the Popper scientific community. Relevant details include screenhsots, the title of the experiment, a list of available input parameters, etc).
 
-A clear link or button next to the experiment should allow the researcher to 
-"Create Trial".
+A clear link next to the experiment allows the researcher to "Create Trial".
 
 #### 5. Create Trial 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_trial.png?raw=true)
 
-Once the researcher selects an experiment, she is shown a dynamically constructed form with the list of input parameters that the experiment accepts. Just as descriptions of experiments in the Library, this list of input acceptable input parameters is taken from the metadata that accompanies the source code of the experiment. Typically these parameters would include the necessary number of players, initial endowments of players, exchange rate from points to dollars, relevant subject pool, etc.
+Once the researcher selects an experiment, she is shown a dynamically constructed form with the list of input parameters that the experiment accepts. Just like descriptions of experiments in the Library, this list of acceptable input parameters is taken from the metadata that accompanies the source code of the experiment. Typically, these parameters would include the necessary number of players, initial endowments of players, an exchange rate from in-game points to dollars that the subject receives, and the demographics of an acceptable subject pool.
 
 Again, researchers without an account cannot access this page and will be redirected to the Signup page instead. 
-
 
 #### 6. About 
 
@@ -297,23 +292,19 @@ Just a stock about page using the same template as the Landing Page.
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_profile.png?raw=true)
 
 The Researcher Profile consists of the information that the researcher provided during the signup 
-process as well as privacy settings, payment method, linked accounts (GitHub, Facebook, Twitter, etc).
+process as well as privacy settings, payment method, and linked accounts (GitHub, Facebook, and Twitter).
 
-Researcher Profile page also contains the history of all trials ever created by a given researcher.
+This page also contains the history of all trials ever launched by the researcher.
 
 #### 8. Monitor Trials 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_monitor.png?raw=true)
 
-By default, upon creating a trial, researcher is taken to the monitoring page of this trial.
+By default, upon creating a trial, the researcher is taken to the monitoring page of this trial. Alternatively, the researcher can find out more information about any trial displayed in the Trial List in the Researcher Dashboard by clicking on the trial. This also takes her to the Monitor Trials page. 
 
-Alternatively, the researcher can find out more information about any trial displayed in the Trial List  in the Researcher Dashboard by clicking on the trial. This also takes her to the Monitor Trials page, which includes more specific information about the selected trial. 
+The exact layout of the Monitor Trials page is dynamically constructed based on metadata accompanying the experiment. The metadata describes what kinds of events can happen and what kind of data about the trial will be available to the researcher during runtime. Typically, the monitoring page displays trial status, the list of players (researcher should be able to click on individual players and review their profiles), realtime choices made by the players, the round number, and players' earnings.
 
-Exact layout of the Monitor Trials page is dynamically constructed based on the metadata accompanying the experiment. Metadata describes what kinds of events can happen and what kind of data about the trial will be available during runtime. Typically, monitoring page displays trial status, the list of players (researcher should be able to click on individual players and review their profiles) realtime choices made by the players, round number, players' earnings, etc.
-
-Once the trial is over, the researcher gets to see and manually approve all pending payments to players on the monitoring page.
-
-Researcher can also download the complete log of the game in CSV format from the monitoring page.
+Once the trial is over, the researcher can see and manually approve all pending payments to players, still on the monitoring page. The researcher can also download the complete log of the game in CSV format.
 
 #### <font color="red">Caution!</font> 
 
@@ -331,9 +322,7 @@ Researcher can also download the complete log of the game in CSV format from the
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_signup.png?raw=true)
 
-Players will not be able to see available games (trials) unless they are signed in. We need to know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially 
-since the player is most likely already arriving from an external site (Amazon Mechanical Turk or oDesk). The player should thus be able to create an account using an existing Facebook or Twitter account. The signup page should also be miminalistic in terms of data gathered from the player, asking only for a username, password, and the player's age. More in-depth demographic
-information will be gathered later, once the player has created an account--perhaps on a separate page, using the same template. This information will be used to determine which trials are visible to the player in the Lobby (2). 
+Players will not be able to see available games (trials) unless they are signed in. We need to know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially since the player is most likely already arriving from an external site (Amazon Mechanical Turk or oDesk). The player should thus be able to create an account using an existing Facebook or Twitter account. The signup page should also be miminalistic in terms of data gathered from the player, asking only for a username, password, and the player's age. More in-depth demographic information will be gathered later, once the player has created an account--perhaps on a separate page, using the same template. This information will be used to determine which trials are visible to the player in the Lobby (2). 
 
 Players who already have an account will use this page to log in. 
 
@@ -341,8 +330,7 @@ Players who already have an account will use this page to log in.
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_lobby.png?raw=true)
 
-Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials) for which they meet eligibility requirements (sometimes researchers will restrict participation in their trials by age, gender, geographic location, connection speed etc). The graphics and UI/UX should compel the player to want to stay on the website to play a lot of games. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies 
-each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. All this information is dynamically pulled by the web application from the corresponding metadata on GitHub
+Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials) for which they meet eligibility requirements. Sometimes, researchers will restrict participation in their trials by age, gender, geographic location, connection speed, or other factors. The graphics and UI/UX should compel the player to stay on the website to play as many games as possible. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. All this information is dynamically pulled by the web application from the corresponding metadata on GitHub.
 
 #### 3. Game 
 
