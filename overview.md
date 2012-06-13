@@ -54,28 +54,6 @@ However, move to online trials imposes several additional constraints on experim
 Popper's goal is to address the above four problems. It will streamline the process of creating complex and visually compelling multiplayer experiments using professional game developing tools which include visual scripting and extensive library of template game assets. Popper will also provide researchers with extensive monitoring capabilites of remote subjects to minimize the possibility on cheating and other runtime irregularities.
 
 
-Using the Popper SDK, Rina creates an experiment using [uScript](http://forum.unity3d.com/threads/84594-Introducing-the-uScript-Visual-Scripting-Tool-for-Unity!), 
-an intuitive visual scripting tool. She does not need to know a single line of 
-code--only how to drag and drop boxes. uScript works within 
-[Unity](http://unity3d.com/), the most commonly used game engine in the world.
-With these tools, Rina can create an online game on par with the best Facebook 
-and App Store games without knowing a single line of code--all she has to do 
-is drag and drop boxes to tell Unity what is supposed to happen in each 
-game. She frames her experiment using Unity's palette of professionally 
-developed options--a card game, shooter, or simple RPG. With a few clicks, Rina
-can create an online shooter that is actually a social science experiment 
-in disguise. 
-
-Rina launches the game from the online Popper dock onto the Game Website. Rina 
-finds people to play her game on the internet using [Amazon Mechanical Turk](https://www.mturk.com/mturk/welcome) 
-or [oDesk](https://www.odesk.com/?_redirected). Subjects sign up within minutes. 
-They play the games not just for pay, but because they're fun. Subject payment
-costs are much lower online. Rina can now run 10 trials per day instead of per 
-year. She can monitor her experiments in real time from the Popper Dock. Total 
-cost of a trial? 1 day and a few hundred dollars, rather than 1 month and several 
-thousand dollars. Rina gets tenure at a top university based on her work in 
-experimental economics and then wins the Nobel Prize.
-
 ## <a name="ThePlumbing" id="anchor5">The Plumbing ##
 
 # Popper 
@@ -90,7 +68,8 @@ The platform consists of four pieces:
 
 4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
 
-Below is a diagram showing the architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
+
+Below is a diagram showing the general architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
 
 <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)</a>
 
