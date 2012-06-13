@@ -101,41 +101,41 @@ architecture of Popper. Click <a href="https://github.com/Experiments/popper-des
 
 <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)</a>
 
-1. Researcher downloads the Popper SDK from Github using their desktop Github client. 
+1. <font color="5185E8">Researcher</font> downloads the <font color="5C878F">Popper SDK</font> from <font color="5C878F">Github</font> using his desktop <font color="5C878F">Github</font> client. 
 
-2. Researcher opens the Popper SDK in Unity and creates an experiment consisting of the Client and Master Client. The Client is the visual front end of the experiment. It is ultimately executed on a player's computer or phone. The Master Client is the underlying logic of the experiment and ultimately runs in the Experiment Server.
+2. <font color="5185E8">Researcher</font> opens the <font color="5C878F">Popper SDK</font> in <font color="5C878F">Unity</font> and creates an experiment consisting of the <font color="5C878F">Client</font> and <font color="5C878F">Master Client</font>. The <font color="5C878F">Client</font> is the visual front end of the experiment. It is ultimately executed on a <font color="DB563B">player's</font> computer or phone. The <font color="5C878F">Master Client</font> is the underlying logic of the experiment and ultimately runs in the <font color="5C878F">Experiment Server</font>.
 
-3. Researcher uploads the experiment, which consists of the Master Client, Client, and Source Code, to his local GitHub repository. 
+3. <font color="5185E8">Researcher</font> uploads the experiment, which consists of the <font color="5C878F">Master Client</font>, <font color="5C878F">Client</font>, and <font color="5C878F">Source Code</font>, to his local <font color="5C878F">GitHub</font> repository. 
 
-4. GitHub Client syncs the contents of the local repository with the remote online GitHub repository. 
+4. <font color="5C878F">GitHub Client</font> syncs the contents of the local repository with the remote online <font color="5C878F">GitHub</font> repository. 
 
-5. Researcher logs into the online Researcher Dashboard and selects an experiment to launch a trial. 
+5. <font color="5185E8">Researcher</font> logs into the online <font color="5C878F">Researcher Dashboard</font> and selects an experiment to launch a trial. 
 
-6. The Popper Web Service downloads the Master Client that corresponds to the selected experiment.
+6. The <font color="5C878F">Popper Web Service</font> downloads the <font color="5C878F">Master Client</font> that corresponds to the selected experiment.
 
-7. The Popper Web Service uploads this Master Client to the Experiment Server.
+7. The <font color="5C878F">Popper Web Service</font> uploads this <font color="5C878F">Master Client</font> to the <font color="5C878F">Experiment Server</font>.
 
-8. The Popper Web Service remotely starts the Master Client on the Experiment Server and connects it to the Photon Server, creating a trial. 
+8. The <font color="5C878F">Popper Web Service</font> remotely starts the <font color="5C878F">Master Client</font> on the <font color="5C878F">Experiment Server</font> and connects it to the <font color="5C878F">Photon Server</font>, creating a trial. 
 
-9. The Popper Web Service announces the trial to eligible players in the Popper Subject Pool.
+9. The <font color="5C878F">Popper Web Service</font> announces the trial to eligible <font color="DB563B">players</font> in the <font color="DB563B">Popper Subject Pool</font>.
 
-10. Interested players log into the Player Site. 
+10. Interested <font color="DB563B">players</font> log into the <font color="5C878F">Player Site</font>. 
 
-11. The Player Site downloads the Client from the experiments repository on GitHub.
+11. The <font color="DB563B">Player Site</font> downloads the <font color="5C878F">Client</font> from the experiments repository on <font color="5C878F">GitHub</font>.
 
-12. The Player Site opens the Client on each player's browser or phone. The player sees the game.
+12. The <font color="DB563B">Player Site</font> opens the <font color="5C878F">Client</font> on each <font color="DB563B">player's</font> browser or phone. The <font color="DB563B">player</font> sees the game.
 
-13. Each player's Client connects to the current trial running on the Photon Server.
+13. Each <font color="5C878F">player's Client</font> connects to the current trial running on the Photon Server.
 
-14. The Popper Web Service establishes a connection with Photon Server via Photon Client. The trial begins.
+14. The <font color="5C878F">Popper Web Service</font> establishes a connection with <font color="5C878F">Photon Server</font> via <font color="5C878F">Photon Client</font>. The trial begins.
 
-15. The Researcher Site monitors the ongoing trial via Photon Client.
+15. The <font color="5185E8">Researcher Site</font> monitors the ongoing trial via <font color="5C878F">Photon Client</font>.
 
-16. All events in the trial are recorded in the Popper database.
+16. All events in the trial are recorded in the <font color="5C878F">Popper database</font>.
 
-17. Researcher monitors the ongoing trial in his browser. Once the trial ends, Researcher reviews and approves subject payments.
+17. <font color="5185E8">Researcher</font> monitors the ongoing trial in his browser. Once the trial ends, <font color="5185E8">Researcher</font> reviews and approves subject payments.
 
-18. The Popper Web Service posts payments to players' accounts. 
+18. The <font color="5C878F">Popper Web Service</font> posts payments to <font color="DB563B">players'</font> accounts. 
 
 ### Role 1: Unity Programmer ###
 
