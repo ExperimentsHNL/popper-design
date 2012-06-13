@@ -17,17 +17,15 @@
 **Popper** is a platform that allows social science researchers to create and 
 run **online experiments** to study human behavior. It consists of four pieces: 
 
-1. **Popper SDK**, -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
+1. **Popper SDK** -- a set of tools based on Unity 3D game engine that the reseacher uses on their local computer to design experiments in the form of short multiplayer games;
 
-2. **Hosting Platform**, -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
+2. **Experiments Library** -- GitHub-based online repository used for storing and sharing source code, as well as binary files of developed experiments;
 
-3. **Researcher Site**, -- website that the researcher uses to launch her 
-experiments online and watch them in real time;
+3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
 
-4. **Player Site**, where subjects participate in experiments by 
-playing games. 
+4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
 
-### Social scientists would like to know *when* and *why* people... ###
+### Social scientists are interested in studying human behavior, and developing theories explaining it. Experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories ###
 
 ### Testing human behavior is hard... ###
 
