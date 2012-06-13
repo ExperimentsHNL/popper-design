@@ -20,7 +20,7 @@
 
 Controlled experiments represent the main tool by means of which researchers are able to test the validity of proposed theories. All candidate theories must produce specific predictions (hypotheses) that can in principle be proven wrong. By subjecting such predictions to experimental test researchers falsify incorrect theories.
 
-### Conducting controlled experiments in social sciences is difficult. ### 
+### Conducting controlled experiments in social sciences is difficult. 
 
 Unlike natural scientists who conduct their experiments with inanimate objects, social scientists experiment with live human beings. Human subjects cannot be forced to participate in experiments, and can also quit an ongoing experimental trial at any point. Participation thus has to be incentivized by monetary compensation that rewards completion of the trial. These trials are typically run in physical laboratories where invited volunteer subjects engange in simple decision tasks for $15-25/hour, and sometimes more depending on their performance. 
 
@@ -41,12 +41,19 @@ might have to recruit subjects a second or third time until enough people have
 participated. More weeks pass.
 
 
-In the recent years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments because experimental subjects are no longer required to come to a physical lab, and can participate in the trials in the comfort of their home.
+In the last 3 years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments because experimental subjects are no longer required to come to a physical lab, and can participate in the trials in the comfort of their home.
 
-However,  most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trial is currently available on the market.
+However, most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
+
+While helping to reduce cost, and to increase subject availability, also impose two additional constraints 
+Even though online trials have been able to add While addressing some of the limitations of 
+
+1. Comprehension.
+
+2. Attrition. 
 
 
-**Popper** 
+**Popper's** goal is to streamline the process of creating the 
 
 # Popper 
 
