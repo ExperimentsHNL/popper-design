@@ -1,6 +1,4 @@
-# Popper Brief #
-
-Run experiments online. Complete 10 trials in the time it currently takes to finish 1. We make running experiments pain free so that you can focus on **analyzing** your data rather than **collecting** it. Now, the world is your subject pool.  
+# Popper Brief # 
 
 ## Table of Contents ##
 
