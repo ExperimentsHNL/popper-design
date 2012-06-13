@@ -208,30 +208,59 @@ On this page the researcher should see:
 
 - an introduction video (which we will create);
 
-- highlights of the platform;
+- highlights of the platform (key features, advantages);
 
 - list of logos/shields of prominent clients using Popper;
 
-- navigation panel with sections About, Experiment Library, Documentation (hosted externally on GitHub), Sign up. This navigation bar should be consistent and available throughout the entire website. 
+- navigation panel with sections About, Experiment Library, Documentation (hosted externally on GitHub), Sign up. 
+
+The navigation bar should be consistent and available (along with Popper logo) throughout the entire website. (If a researcher is logged in, Sign Up section is replaced with their username, and they see an additional section "Download" that leads to one of the documentation pages on GitHub with the list of steps necessary to download Popper SDK)
 
 #### 2. Signup 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_signup.png?raw=true)
 
-The Signup page allows the researcher to create a Popper account and go through the steps necessary to begin running experiments online. It should include fields for the researcher to provide her demographic information as well as research-specific information such as her field, institution, and the name of her laboratory. Once the researcher has filled in this basic information, she will be taken to a page (still part of "Signup"), but on a separate page that provides her with step-by-step instructions for downloading the Popper SDK and creating/linking a GitHub account.
+The Signup page allows the researcher to create a Popper account and go through the steps necessary to begin running experiments online. 
 
-Downloading the Popper SDK will be done on our website, as we will be redistributing Unity with their permission. Creating a GitHub account will be done on the GitHub website. Linking the researcher's GitHub account with our GitHub server will be done with the click of one button on our page, which takes the researcher to an external GitHub page that authenticates the 
-connection of their account. 
+Signup form should containt the following fields:
+
+- full name;
+
+- email;
+
+- affiliation;
+
+- password.
+
 
 #### 3. Researcher Dashboard 
 
 ![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_dashboard.png?raw=true)
 
-Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher has an overview of all her trials and experiments that she is following. She should see two main elements in her Dashboard: an Experiments Feed and a Trials Feed.  
+Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher has an overview of all her trials and experiments that she is following. She should see two main sections in her Dashboard: the Feed and the list of their Trials.  
 
-The Experiments Feed conceptually resembles the feed visible within a GitHub account. The researcher can see commits and changes to existing experiments that other researchers have made. To clarify, an **experiment** is a particular set of game logic framed as an online game, and its purpose is to test human behavior. Experiments consist of multiple **trials.** Researchers may choose to run trials using experiments that other researchers have already designed and made publicly available. The idea is for researchers to be able to share experiments with each other.
+**Feed**
 
-The second element of the Dashboard is the list of the researcher's own trials. This Trial Feed will be dynamic, like the Experiments feed. The researcher will see important new information about each of her ongoing trials. She should see the name, status, time stamp, underlying experiment, payment information, and number of subjects associated with each trial, as well as any changes to any of these pieces of information. The status of the trial is one of 5: Error, Awaiting Launch (the researcher has not yet launched the trial), Ongoing, Payment Pending, and Completed.  
+The Feed contains all important events associated with researcher's activity within Popper: creation of trials, completion of trials, pending payments, changes to the experiments that the researcher follows on GitHub etc.
+
+To clarify, the word **experiment** refers to the software (source code and binary files) created by the researcher on their local computer and stored in the Experiment Library on GitHub. The word **trial** refers to a particular run of an experiment, initiated by a researcher through the Researcher Site.
+
+Researchers may choose to run trials using experiments that other researchers have already designed and made publicly available. The idea is for researchers to be able to share experiments with each other. 
+
+Researchers also frequently outsource running of their experiments to research hired assistants, who would not be involved in designing the experiment, but who would merely initiate and monitor trials based on the experiment created by their supervisor.
+
+**List of Trials**
+
+Each trial on this list should be accompanied by the following information:
+
+- name of the underlying experiment
+
+- trial name,
+
+- status (e.g. waiting for players, in progress, completed, error)
+
+- duration since start
+
 
 #### 4. Experiment Library 
 
@@ -239,9 +268,13 @@ The second element of the Dashboard is the list of the researcher's own trials. 
 
 The Experiment Library includes a list of all available experiments. We plan to launch with six stock experiments, each of which can be run with a different frame. The experiments should each be accompanied by an appropriate image, which we will provide. 
 
-Two audiences are served by the Experiment Library. 1. Researchers without an account can browse the Library, but cannot initiate a trial. If they attempt to do so, they should be prompted to create an account. 2. Researchers with an account can use the Experiment Library to select an experiment within which to launch a trial.
+Two audiences are served by the Experiment Library. 1. Users without an account can browse the Library, but cannot initiate a trial. If they attempt to do so, they should be prompted to create an account. 2. Researchers with an account can use the Experiment Library to select an experiment within which to launch a trial.
 
-Basic information should accompany each of the images of experiments available in the Library: a brief description, available game frames, date created, number of subjects, and number of trials run. A clear link or button next to the experiment should allow the researcher to 
+The list of available experiments is generated dynamically by the web application. It looks up GitHub repositories with experiments to which the user has access, and displays formatted descriptions of those experiments based on the metadata contained in corresponding  GitHub repositories. E
+
+This process assumes that researchers would supply the relevant metadata (e.g. screenhsots, title of the experiment, list of available input parameters etc) along with the source code of the experiments that they create.
+
+A clear link or button next to the experiment should allow the researcher to 
 "Create Trial".
 
 #### 5. Create Trial 
