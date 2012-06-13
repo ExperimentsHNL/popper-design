@@ -34,37 +34,21 @@ This approach has three serious limitations:
 
 Apart from that, tbe software available to physical labs use very outdated software to create and conduct experiments. The main software package used for these purposes is [z-Tree](http://www.iew.uzh.ch/ztree/index.php) which was created in the University of Zurich in the late 1990s and hasn't been updated since then.
 
-
-This data is hard to collect because of two main reasons: 
-money and time. 
-
-Let's take a look at an example. Say Rina the Economist wants to study when 
-people cooperate by testing the classical game theory scenario,
-[Prisoner's Dilemma](http://en.wikipedia.org/wiki/Prisoner's_dilemma). 
-
-First, Rina must learn how to program and work with 
-[outdated software](http://www.iew.uzh.ch/ztree/index.php) from the 1990s
-to design her experiment. Her subjects will have to fill in boxes with 
-numbers--a task so boring that Rina will have to pay them each $15 to $20 
-per hour.
-
 Next, she must find a multi-million dollar social science experiments laboratory 
 and then several weeks securing enough subjects to run her trial. This process 
 often takes several weeks. Some of her subjects might not show up, and Rina 
 might have to recruit subjects a second or third time until enough people have 
 participated. More weeks pass.
 
-By the time this process is over, 1 month has passed and Rina has spent
-thousands of dollars. And that's just for Trial 1.
 
-### Popper solves both problems. ###
+In the recent years researchers have started conducting experiments online, using subjects from various online labor markets, most notable [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool, and decreased subject payments because experimental subjects are no longer required to come to a physical lab, and can participate in the trials in the comfort of their home.
 
-What if a trial could take 1 day instead of several months? What if each trial
-cost a few hundred dollars rather than several thousand?
-
-Along comes Popper to the rescue!
+However,  most online trials have so far been limited to survey-style tasks that do not involve realtime interaction between subjects. And the researchers that did conduct multiplayer studies had to write the ad hoc software necessary to support such studies from scratch. No reusable framework capable of supporting multiplayer online trial is currently available on the market.
 
 
+**Popper** 
+
+# Popper 
 
 It consists of four pieces: 
 
@@ -75,8 +59,6 @@ It consists of four pieces:
 3. **Researcher Site** -- a website that the researcher uses to launch and monitor online trials based on the experiments available in the **Experiments Library**;
 
 4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by the researchers.
-
-
 
 
 
