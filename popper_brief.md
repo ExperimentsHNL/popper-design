@@ -148,15 +148,15 @@ and other good stuff.
 
 There are five discrete tasks that remain to be done for the MVP:
 
-1. Refactor existing code; 
+1. Refactor existing code 
 
-2. Standardize the structure of 6 stock games; 
+2. Standardize the structure of 6 stock games
 
-3. Develop uScript node packages; 
+3. Develop uScript node packages
 
-4. Simplify the uScript workflow; 
+4. Simplify the uScript workflow 
 
-5. Raw logging functionality on Photon.
+5. Raw logging functionality on Photon
 
 The remainder of this brief will run through a detailed workflow of the Unity, 
 uScript, and Photon Server portions of Popper. 
@@ -203,13 +203,13 @@ The purpose of the landing page is to introduce the researcher to the Popper Pla
 
 On this page the researcher should see:
 
-- an introduction video (which we will create);
+- An introduction video (which we will create)
 
-- highlights of the platform (key features, advantages);
+- Highlights of the platform (key features, advantages)
 
-- a list of logos/shields of prominent clients using Popper;
+- A list of logos/shields of prominent clients using Popper
 
-- a navigation panel with links to About, Experiment Library, Documentation (hosted externally on GitHub), and Sign up. 
+- A navigation panel with links to About, Experiment Library, Documentation (hosted externally on GitHub), and Sign up 
 
 The navigation bar should be consistent and available (along with the Popper logo) throughout the entire website. If a researcher is logged in, the Sign Up link is replaced with their username, and they see an additional "Download" link. This link leads leads to one of our Documentation pages on GitHub, featuring the steps necessary to download the Popper SDK.
 
@@ -221,13 +221,13 @@ The Signup page allows the researcher to create a Popper account and go through 
 
 The Signup form should contain the following fields:
 
-- full name;
+- Full name
 
-- email;
+- Email
 
-- affiliation;
+- Affiliation
 
-- password.
+- Password
 
 
 #### 3. Researcher Dashboard 
@@ -250,13 +250,13 @@ Researchers often hire research assistants to run trials of their experiments. T
 
 Each trial on this list should be accompanied by the following information:
 
-- name of the underlying experiment
+- Name of the underlying experiment
 
-- trial name,
+- Trial name
 
-- status (e.g. waiting for players, in progress, completed, error)
+- Status (e.g. waiting for players, in progress, completed, error)
 
-- duration since start
+- Duration since start
 
 
 #### 4. Experiment Library 
@@ -269,7 +269,7 @@ Two audiences are served by the Experiment Library. 1. Users without an account 
 
 The list of available experiments is generated dynamically by the web application. It looks up GitHub repositories with experiments to which the user has access, and displays formatted descriptions of those experiments based on the metadata contained in corresponding  GitHub repositories.
 
-We would like to encourage researchers to share details about the experiments that they create with the Popper scientific community. Relevant details include screenhsots, the title of the experiment, a list of available input parameters, etc).
+We would like to encourage researchers to share details about the experiments that they create with the Popper scientific community. Relevant details include screenhsots, the title of the experiment, a list of available input parameters, etc.
 
 A clear link next to the experiment allows the researcher to "Create Trial".
 
@@ -360,13 +360,13 @@ The purpose of the landing page is to introduce the researcher to the Popper Pla
 
 On this page the researcher should see:
 
-- an introduction video (which we will create);
+- An introduction video (which we will create)
 
-- highlights of the platform (key features, advantages);
+- Highlights of the platform (key features, advantages)
 
-- a list of logos/shields of prominent clients using Popper;
+- A list of logos/shields of prominent clients using Popper
 
-- a navigation panel with links to About, Experiment Library, Documentation (hosted externally on GitHub), and Sign up. 
+- A navigation panel with links to About, Experiment Library, Documentation (hosted externally on GitHub), and Sign up
 
 The navigation bar should be consistent and available (along with the Popper logo) throughout the entire website. If a researcher is logged in, the Sign Up link is replaced with their username, and they see an additional "Download" link. This link leads leads to one of our Documentation pages on GitHub, featuring the steps necessary to download the Popper SDK.
 
@@ -387,13 +387,13 @@ The Signup page allows the researcher to create a Popper account and go through 
 
 The Signup form should contain the following fields:
 
-- full name;
+- Full name
 
-- email;
+- Email;
 
-- affiliation;
+- Affiliation;
 
-- password.
+- Password.
 
 
 #### 3. Researcher Dashboard 
@@ -416,13 +416,13 @@ Researchers often hire research assistants to run trials of their experiments. T
 
 Each trial on this list should be accompanied by the following information:
 
-- name of the underlying experiment
+- Name of the underlying experiment
 
-- trial name,
+- Trial name
 
-- status (e.g. waiting for players, in progress, completed, error)
+- Status (e.g. waiting for players, in progress, completed, error)
 
-- duration since start
+- Duration since start
 
 
 #### 4. Experiment Library 
