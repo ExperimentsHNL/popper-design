@@ -370,7 +370,7 @@ On this page the researcher should see:
 
 The navigation bar should be consistent and available (along with the Popper logo) throughout the entire website. If a researcher is logged in, the Sign Up link is replaced with their username, and they see an additional "Download" link. This link leads leads to one of our Documentation pages on GitHub, featuring the steps necessary to download the Popper SDK.
 
-### Logo
+##### Logo
 
 1. The Popper Platform is named after [Karl Popper](http://en.wikipedia.org/wiki/Karl_Popper), a major philosopher of science in the 20th century, who established the modern practice of hypothesis testing. Given that the work "Popper" has multiple meanings, it is important for us that the logo conveys a clear association with Karl Popper, and is not confused with the action of "popping" or drugs. We would prefer to have an stylized image of Karl Popper as part of the logo.
 
