@@ -141,31 +141,31 @@ The Unity developer works on the Popper SDK and a set of stock games. The Popper
 
 1. Third-party tools
 
-	- **uScript:** A visual scripting add-on for Unity developed by Detox Studios. Pending our distribution licensing agreement with Detox Studios, we may or may not bundle uScript with the Popper SDK. If we do not, users would download uScript from the Unity Asset Store.
+- **uScript:** A visual scripting add-on for Unity developed by Detox Studios. Pending our distribution licensing agreement with Detox Studios, we may or may not bundle uScript with the Popper SDK. If we do not, users would download uScript from the Unity Asset Store.
 
-	- **iTween:** An open-source animation add-on for Unity.
+- **iTween:** An open-source animation add-on for Unity.
 
-	- **Photon Unity Networking:** Unity-specific client for Photon Server developed by Exit Games/M2H. It is used to connect multiple players within the same experimental trial.
+- **Photon Unity Networking:** Unity-specific client for Photon Server developed by Exit Games/M2H. It is used to connect multiple players within the same experimental trial.
 
 2. Template frames
 
-	- **Template graphical assets:** Complete scenes and scene components, such as characters, props, sounds, animation, fonts, etc. that researchers can use to construct the front-end visual representation of their experiments. 
+- **Template graphical assets:** Complete scenes and scene components, such as characters, props, sounds, animation, fonts, etc. that researchers can use to construct the front-end visual representation of their experiments. 
 
-	- **Editor Tools:** Customized set of tools that allow the researcher to manipulate visual assets and scenes; e.g., adapt a scene for a specific number of players by scaling the number of user-specific game objects. 
+- **Editor Tools:** Customized set of tools that allow the researcher to manipulate visual assets and scenes; e.g., adapt a scene for a specific number of players by scaling the number of user-specific game objects. 
 
-	- **Client-side scripts:** Under-the-hood scripts and game controllers used to define the technical behavior of assets. Here, "technical" refers to behavior that *is not* relevant for the researcher to design the experiment and is hence not visible through uScript.
+- **Client-side scripts:** Under-the-hood scripts and game controllers used to define the technical behavior of assets. Here, "technical" refers to behavior that *is not* relevant for the researcher to design the experiment and is hence not visible through uScript.
 
-	- **Text-only frame:** A bare-bones frame that features only text but no graphics rendered in real time. 
+- **Text-only frame:** A bare-bones frame that features only text but no graphics rendered in real time. 
 
-	- **Tutorial creation system:** Tools for building short interactive tutorials explaining the rules of the experiment to subjects from within the visual frame. 
+- **Tutorial creation system:** Tools for building short interactive tutorials explaining the rules of the experiment to subjects from within the visual frame. 
 
 3. Custom uScript nodes and canvases
 
-	- **Template uScript canvases:** Pre-made canvases that contain frequently used sequences of actions, such as the timing structure of a trial or the handling of subject payments. 
+- **Template uScript canvases:** Pre-made canvases that contain frequently used sequences of actions, such as the timing structure of a trial or the handling of subject payments. 
 
-	- **Client-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define the substantive behavior of visual frames. "Substantive" refers to behavior that *is* relevant for the researcher to design the experiment.
+- **Client-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define the substantive behavior of visual frames. "Substantive" refers to behavior that *is* relevant for the researcher to design the experiment.
 
-	- **Server-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define substantive game logic.
+- **Server-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define substantive game logic.
 
 4. Metadata templates
 
