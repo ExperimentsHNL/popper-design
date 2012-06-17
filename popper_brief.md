@@ -135,58 +135,90 @@ The Web Designer creates the logos, UI/UX, and front-end code for the Researcher
 
 Go to the [Web Designer Brief](#WebDesignerBrief). 
 
-## <a name="UnityProgrammerBrief" id="anchor1">Unity Programmer/Developer Brief</a> ##
+## <a name="UnityProgrammerBrief" id="anchor1">Unity Programmer Brief</a> 
 
-In progress.
+The Unity developer works on the Popper SDK and a set of stock games. The Popper SDK is a set of tools based on Unity 3D that researchers use to create online experiments. Specifically, it is a Unity package that includes the following components: 
 
-<!-- In this section, we'll explain the user workflow related to Unity, tech specs, 
-and other good stuff. 
+1. Third-party tools
 
-### Big-Picture Overview ###
+	- **uScript:** A visual scripting add-on for Unity developed by Detox Studios. Pending our distribution licensing agreement with Detox Studios, we may or may not bundle uScript with the Popper SDK. If we do not, users would download uScript from the Unity Asset Store.
 
-![Temporary Plumbing Image](http://static4.depositphotos.com/1009645/357/v/450/dep_3577496-Architectural-blueprint-background.-Vector.jpg)
+	- **iTween:** An open-source animation add-on for Unity.
 
-There are five discrete tasks that remain to be done for the MVP:
+	- **Photon Unity Networking:** Unity-specific client for Photon Server developed by Exit Games/M2H. It is used to connect multiple players within the same experimental trial.
 
-1. Refactor existing code 
+2. Template frames
 
-2. Standardize the structure of 6 stock games
+	- **Template graphical assets:** Complete scenes and scene components, such as characters, props, sounds, animation, fonts, etc. that researchers can use to construct the front-end visual representation of their experiments. 
 
-3. Develop uScript node packages
+	- **Editor Tools:** Customized set of tools that allow the researcher to manipulate visual assets and scenes; e.g., adapt a scene for a specific number of players by scaling the number of user-specific game objects. 
 
-4. Simplify the uScript workflow 
+	- **Client-side scripts:** Under-the-hood scripts and game controllers used to define the technical behavior of assets. Here, "technical" refers to behavior that *is not* relevant for the researcher to design the experiment and is hence not visible through uScript.
 
-5. Raw logging functionality on Photon
+	- **Text-only frame:** A bare-bones frame that features only text but no graphics rendered in real time. 
 
-The remainder of this brief will run through a detailed workflow of the Unity, 
-uScript, and Photon Server portions of Popper. 
+	- **Tutorial creation system:** Tools for building short interactive tutorials explaining the rules of the experiment to subjects from within the visual frame. 
 
-### Step 1: Foo ###
+3. Custom uScript nodes and canvases
 
-![Temporary Plumbing Image](http://static4.depositphotos.com/1009645/357/v/450/dep_3577496-Architectural-blueprint-background.-Vector.jpg)
+	- **Template uScript canvases:** Pre-made canvases that contain frequently used sequences of actions, such as the timing structure of a trial or the handling of subject payments. 
 
-Do this, this, then that. 
+	- **Client-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define the substantive behavior of visual frames. "Substantive" refers to behavior that *is* relevant for the researcher to design the experiment.
 
-### Step 2: Foo ###
+	- **Server-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define substantive game logic.
 
-![Temporary Plumbing Image](http://static4.depositphotos.com/1009645/357/v/450/dep_3577496-Architectural-blueprint-background.-Vector.jpg)
+4. Metadata templates
 
-Do this, this, then that. 
+The platform provides templates of metadata, which are included with each experiment. These metadata provide:
 
-### Step 3: Foo ###
+- A list (and default values) of input parameters that the game can accept, such as the number of players, number of rounds, compensation, etc.
 
-![Temporary Plumbing Image](http://static4.depositphotos.com/1009645/357/v/450/dep_3577496-Architectural-blueprint-background.-Vector.jpg)
+- Full communication protocol between the client and server, including the list of permitted Remote Procedure Calls (RPCs).
 
-Do this, this, then that. 
+- Full communication protocol between the Researcher Site and the server, including the list of permitted Remote Procedure Calls (RPCs).
 
-### <font color="red">Caution!</font> ###
+- An end-of-game report template that is updated with trial data by the Researcher Site at the end of the experiment. 
 
-1. Be care of this.
+- Subject recruitment ad(s).
 
-2. Also this.
+- A short game description (to be displayed in the Experiment Library).
 
-3. Also that. 
- -->
+5. Local dashboard
+
+The researcher should be able to test games locally within the Unity editor without having to create a remote server. This requires providing the researcher with an analog of the Researcher Site within Unity that makes it possible to create and run a sample trial. 
+
+### Platform Documentation
+
+Documentation for Popper will be Wiki-style and hosted on GitHub.
+
+### Stock games
+
+In addition to the Popper SDK, researchers will be provided with the following stock games to illustrate the capabilities of Popper.
+
+- [Prisoner's dilemma](http://en.wikipedia.org/wiki/Prisoner's_dilemma)
+
+- [Public goods game](http://en.wikipedia.org/wiki/Public_goods_game)
+
+- [Dictator game](http://en.wikipedia.org/wiki/Dictator_game)
+
+- [Ultimatum game](http://en.wikipedia.org/wiki/Ultimatum_game)
+
+- [Trust game](http://en.wikipedia.org/wiki/Dictator_game#Trust_game)
+
+- [p-Beauty context](http://en.wikipedia.org/wiki/Keynesian_beauty_contest)
+
+- [Double-sided auction](http://en.wikipedia.org/wiki/Dutch_auction)
+
+### General remarks
+
+1. We would like for the size of core Popper SDK to be as small as possible, leaving heavy graphical assets in separate packages available on-demand from GitHub.
+
+2. Various limitations of uScript will become apparent as the developer works on the SDK. We have a very good relationship with Scott Blinn, co-founder of Detox Studios. They have been helpful in the past and would be willing to accomodate feature requests, bug reports, UI/UX suggestions, etc.
+
+3. It is vital to take advantage of the graphical assets available in the Unity ecosystem. Accordingly, we need to streamline the process of importing professional third-party games, adding Photon networking, and integrating them with our uScript-based backend. 
+
+4. We would like to keep the entry barrier for researchers as low as possible. Ideally, the Popper SDK should be compatible with the free version of Unity. At present, the Popper SDK relies on Unity Build API, which is only available in Unity Pro. We would like to find a way around this. 
+
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
 As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
