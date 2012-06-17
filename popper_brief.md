@@ -139,7 +139,7 @@ Go to the [Web Designer Brief](#WebDesignerBrief).
 
 The Unity developer works on the Popper SDK and a set of stock games. The Popper SDK is a set of tools based on Unity 3D that researchers use to create online experiments. Specifically, it is a Unity package that includes the following components: 
 
-1. Third-party tools
+#### 1. Third-party tools
 
 - **uScript:** A visual scripting add-on for Unity developed by Detox Studios. Pending our distribution licensing agreement with Detox Studios, we may or may not bundle uScript with the Popper SDK. If we do not, users would download uScript from the Unity Asset Store.
 
@@ -147,7 +147,7 @@ The Unity developer works on the Popper SDK and a set of stock games. The Popper
 
 - **Photon Unity Networking:** Unity-specific client for Photon Server developed by Exit Games/M2H. It is used to connect multiple players within the same experimental trial.
 
-2. Template frames
+#### 2. Template frames
 
 - **Template graphical assets:** Complete scenes and scene components, such as characters, props, sounds, animation, fonts, etc. that researchers can use to construct the front-end visual representation of their experiments. 
 
@@ -159,7 +159,7 @@ The Unity developer works on the Popper SDK and a set of stock games. The Popper
 
 - **Tutorial creation system:** Tools for building short interactive tutorials explaining the rules of the experiment to subjects from within the visual frame. 
 
-3. Custom uScript nodes and canvases
+#### 3. Custom uScript nodes and canvases
 
 - **Template uScript canvases:** Pre-made canvases that contain frequently used sequences of actions, such as the timing structure of a trial or the handling of subject payments. 
 
@@ -167,7 +167,7 @@ The Unity developer works on the Popper SDK and a set of stock games. The Popper
 
 - **Server-side nodes:** Set of nodes available to researchers through the uScript palette that allow them to define substantive game logic.
 
-4. Metadata templates
+#### 4. Metadata templates
 
 The platform provides templates of metadata, which are included with each experiment. These metadata provide:
 
@@ -183,7 +183,7 @@ The platform provides templates of metadata, which are included with each experi
 
 - A short game description (to be displayed in the Experiment Library).
 
-5. Local dashboard
+#### 5. Local dashboard
 
 The researcher should be able to test games locally within the Unity editor without having to create a remote server. This requires providing the researcher with an analog of the Researcher Site within Unity that makes it possible to create and run a sample trial. 
 
