@@ -175,7 +175,7 @@ The platform provides templates of metadata, which are included with each experi
 
 - Full communication protocol between the client and server, including the list of permitted Remote Procedure Calls (RPCs).
 
-- Full communication protocol between the Researcher Site and the server, including the list of permitted Remote Procedure Calls (RPCs).
+- Full communication protocol between the Researcher Site and the server, including the list of permitted RPCs.
 
 - An end-of-game report template that is updated with trial data by the Researcher Site at the end of the experiment. 
 
@@ -211,7 +211,7 @@ In addition to the Popper SDK, researchers will be provided with the following s
 
 ### General remarks
 
-1. We would like for the size of core Popper SDK to be as small as possible, leaving heavy graphical assets in separate packages available on-demand from GitHub.
+1. We would like for the size of the core Popper SDK to be as small as possible, leaving heavy graphical assets in separate packages available on-demand from GitHub.
 
 2. Various limitations of uScript will become apparent as the developer works on the SDK. We have a very good relationship with Scott Blinn, co-founder of Detox Studios. They have been helpful in the past and would be willing to accomodate feature requests, bug reports, UI/UX suggestions, etc.
 
