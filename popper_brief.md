@@ -223,7 +223,7 @@ In addition to the Popper SDK, researchers will be provided with the following s
 
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
-As mentioned in the Platform Overview seƒction above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
+As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
 
 ### Researcher Site 
 
