@@ -219,6 +219,8 @@ In addition to the Popper SDK, researchers will be provided with the following s
 
 4. We would like to keep the entry barrier for researchers as low as possible. Ideally, the Popper SDK should be compatible with the free version of Unity. At present, the Popper SDK relies on Unity Build API, which is only available in Unity Pro. We would like to find a way around this. 
 
+5. We would like ot be able to deploy games to as many Unity-supported platforms as possible (Windows/Mac, Webplayer, Flash, Android, and iOS). Some of these platforms impose restrictions on networking; we would like to streamline the process of overcoming these restrictions.
+
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
 As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
