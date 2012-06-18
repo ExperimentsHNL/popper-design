@@ -24,9 +24,9 @@ Following are the tech specs for **Popper**.  Included is a description of the d
 
 The development process extends from brainstorming a feature to closing bug tickets for that feature.  The development process is designed for sharing information between developers and non-developers, and for creating a comprehensive log of the development of a feature.  
 
-It's extremely important to follow a rigorous development process in order to reduce the amount of time that's spent redeveloping features because of miscommunication between the developer and project manager, or readdressing bugs that were never fully fixed, etc.  The development process is defined as the interaction between a Developer and a Project Manager.  
+It's extremely important to follow a rigorous development process in order to reduce the amount of time that's spent redeveloping features because of miscommunication between the developer and project manager, or readdressing bugs that were never fully fixed, etc.  The development process is defined as the interaction between a **Developer** and a **Project Manager**.  
 
-It's important, even as **Popper** grows, to maintain a single line of communication between the development team and the Project Manager, who's in charge of communicating functional specs and aggregating information from many different sources, including: other non-developers, clients and advisors.
+It's important, even as **Popper** grows, to maintain a single line of communication between the development team and the **Project Manager**, who's in charge of communicating functional specs and aggregating information from many different sources, including: other non-developers, clients and advisors.
 
 #### Process
 
