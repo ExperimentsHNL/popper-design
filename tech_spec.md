@@ -34,23 +34,23 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 2. Feature creator clones and branches the popper-feature-requests repository and commits all notes, drawings or other informal documents. 
 3. Feature creator writes a [functional spec](http://www.mojofat.com/tutorial/) and commits it to the repository branch.
 4. Feature creator hands off the spec to the **Project Manager**, who adds it to the Product Backlog.
-5. Project Manager assigns the feature to a developer(s).  Developer should only be assigned one feature at a time. 
-6. Developer pulls from the popper-feature-requests repository and checks out the associated feature branch.
-7. Developer writes a tech spec, including a time estimate, and commits it to the feature branch.
-8. Project Manager approves tech spec.
-9. Developer branches **Popper** source.
-9. Developer builds feature.
-10. Developer writes tests for critical methods.
-11. Developer creates a new tag and merges back into master.
-12. Developer pushes code to the staging environment.
-13. Project manager tests feature by designing functional tests using [Selenium](http://seleniumhq.org/).
+5. **Project Manager** assigns the feature to a developer(s).  **Developer** should only be assigned one feature at a time. 
+6. **Developer** pulls from the popper-feature-requests repository and checks out the associated feature branch.
+7. **Developer** writes a tech spec, including a time estimate, and commits it to the feature branch.
+8. **Project Manager** approves tech spec.
+9. **Developer** branches Popper source.
+9. **Developer** builds feature.
+10. **Developer** writes tests for critical methods.
+11. **Developer** creates a new tag and merges back into master.
+12. **Developer** pushes code to the staging environment.
+13. **Project manager** tests feature by designing functional tests using [Selenium](http://seleniumhq.org/).
 14. When tests pass, tag is pushed to production.
-15. Add an entry in the popper-design/tech_spec.md file for your feature.
+15. **Developer** adds an entry in the popper-design/tech_spec.md file for the feature.
 
 ##### Bug Fixes
-1. When a bug is reported, Project Manager replicates it in a [Selenium](http://seleniumhq.org/) test.
-2. Developer fixes bug.
-3. When tests pass, bug is closed.
+1. When a bug is reported, **Project Manager** replicates it in a [Selenium](http://seleniumhq.org/) test.
+2. **Developer** fixes bug.
+3. When tests pass, **Project Manager** closes bug ticket..
 
 ### Style Guidelines
 
