@@ -8,11 +8,11 @@
 
 -   [Development Team](#DevelopmentTeam)
 
--	[Unity Programmer Brief](UnityProgrammerBrief)
+-	[Unity Programmer Brief](#UnityProgrammerBrief)
 
--	[Web Developer Brief](WebDeveloperBrief)
+-	[Web Developer Brief](#WebDeveloperBrief)
 
--	[Web Designer Brief](WebDesignerBrief)	 
+-	[Web Designer Brief](#WebDesignerBrief)	 
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
@@ -67,9 +67,9 @@ Popper consists of four pieces:
 4. **Player Site** -- a website that players (experimental subjects) use to browse and participate in trials launched by researchers.
 
 
-Below is a diagram showing the general architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
+Below is a diagram showing the general architecture of Popper. Click <a href="https://github.com/Experiments/popper-design/blob/master/images/popper_overview.png?raw=true" target="_blank">here</a> for a larger view.
 
-<a href="https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/popper_overview.png?raw=true)</a>
+<a href="https://github.com/Experiments/popper-design/blob/master/images/popper_overview.png?raw=true" target="_blank">![Popper Overview](https://github.com/Experiments/popper-design/blob/master/images/popper_overview.png?raw=true)</a>
 
 Typical workflow:
 
@@ -219,17 +219,19 @@ In addition to the Popper SDK, researchers will be provided with the following s
 
 4. We would like to keep the entry barrier for researchers as low as possible. Ideally, the Popper SDK should be compatible with the free version of Unity. At present, the Popper SDK relies on Unity Build API, which is only available in Unity Pro. We would like to find a way around this. 
 
+5. We would like ot be able to deploy games to as many Unity-supported platforms as possible (Windows/Mac, Webplayer, Flash, Android, and iOS). Some of these platforms impose restrictions on networking; we would like to streamline the process of overcoming these restrictions.
+
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
-As mentioned in the Platform Overview section above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
+As mentioned in the Platform Overview seƒction above, researchers and players interact with Popper through two separate interfaces: the Researcher Site and the Player Site. The former allows researchers to launch, execute, and monitor trials; the latter hosts games (trials) that players (subjects) play. The two sites are separate, with different domain names.
 
 ### Researcher Site 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_base.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_base.png?raw=true)
 
 #### 1. Landing Page 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_landing.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_landing.png?raw=true)
 
 The purpose of the landing page is to introduce the researcher to the Popper Platform and encourage her to sign up. 
 
@@ -247,7 +249,7 @@ The navigation bar should be consistent and available (along with the Popper log
 
 #### 2. Signup 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_signup.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_signup.png?raw=true)
 
 The Signup page allows the researcher to create a Popper account and go through the steps necessary to begin running experiments online. 
 
@@ -264,7 +266,7 @@ The Signup form should contain the following fields:
 
 #### 3. Researcher Dashboard 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_dashboard.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_dashboard.png?raw=true)
 
 Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher can see an overview of all her trials, as well as experiments that she is following. The Dashboard is divided into two main sections: the Feed and the list of their Trials.  
 
@@ -293,7 +295,7 @@ Each trial on this list should be accompanied by the following information:
 
 #### 4. Experiment Library 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_library.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_library.png?raw=true)
 
 The Experiment Library includes a list of all available experiments. We plan to launch with six stock experiments, each of which can be run with a different frame. The experiments should each be accompanied by an appropriate image, which we will provide. 
 
@@ -307,7 +309,7 @@ A clear link next to the experiment allows the researcher to "Create Trial".
 
 #### 5. Create Trial 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_trial.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_trial.png?raw=true)
 
 Once the researcher selects an experiment, she is shown a dynamically constructed form with the list of input parameters that the experiment accepts. Just like descriptions of experiments in the Library, this list of acceptable input parameters is taken from the metadata that accompanies the source code of the experiment. Typically, these parameters would include the necessary number of players, initial endowments of players, an exchange rate from in-game points to dollars that the subject receives, and the demographics of an acceptable subject pool.
 
@@ -315,13 +317,13 @@ Again, researchers without an account cannot access this page and will be redire
 
 #### 6. About 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_about.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_about.png?raw=true)
 
 Just a stock about page using the same template as the Landing Page.
 
 #### 7. Researcher Profile 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_profile.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_profile.png?raw=true)
 
 The Researcher Profile consists of the information that the researcher provided during the signup 
 process as well as privacy settings, payment method, and linked accounts (GitHub, Facebook, and Twitter).
@@ -330,7 +332,7 @@ This page also contains the history of all trials ever launched by the researche
 
 #### 8. Monitor Trials 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_monitor.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_monitor.png?raw=true)
 
 By default, upon creating a trial, the researcher is taken to the monitoring page of this trial. Alternatively, the researcher can find out more information about any trial displayed in the Trial List in the Researcher Dashboard by clicking on the trial. This also takes her to the Monitor Trials page. 
 
@@ -341,11 +343,11 @@ Once the trial is over, the researcher can see and manually approve all pending 
 
 ### Player Website 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_base.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_base.png?raw=true)
 
 #### 1. Signup 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_signup.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_signup.png?raw=true)
 
 Players will not be able to see available games (trials) unless they are signed in. We need to know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially since the player is most likely already arriving from an external site (Amazon Mechanical Turk or oDesk). The player should thus be able to create an account using an existing Facebook or Twitter account. The signup page should also be miminalistic in terms of data gathered from the player, asking only for a username, password, and the player's age. More in-depth demographic information will be gathered later, once the player has created an account--perhaps on a separate page, using the same template. This information will be used to determine which trials are visible to the player in the Lobby (2). 
 
@@ -353,25 +355,25 @@ Players who already have an account will use this page to log in.
 
 #### 2. Lobby 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_lobby.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_lobby.png?raw=true)
 
 Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials) for which they meet eligibility requirements. Sometimes, researchers will restrict participation in their trials by age, gender, geographic location, connection speed, or other factors. The graphics and UI/UX should compel the player to stay on the website to play as many games as possible. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. All this information is dynamically pulled by the web application from the corresponding metadata on GitHub.
 
 #### 3. Game 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_game.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_game.png?raw=true)
 
 The player plays the game on this page. The game is embedded as an iframe, and its design is the responsibility of the researcher.
 
 #### 4. About 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_about.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_about.png?raw=true)
 
 Basic About page, perhaps reusing the same template as the Signup page. 
 
 #### 5. Player Profile 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_profile.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_profile.png?raw=true)
 
 The player can view his history of games on the profile page, as well as manage his account 
 information and privacy settings. 
@@ -382,11 +384,11 @@ As mentioned in the Platform Overview section above, researchers and players int
 
 ### Researcher Site 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_base.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_base.png?raw=true)
 
 #### 1. Landing Page 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_landing.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_landing.png?raw=true)
 
 The purpose of the landing page is to introduce the researcher to the Popper Platform and encourage her to sign up. 
 
@@ -413,7 +415,7 @@ The navigation bar should be consistent and available (along with the Popper log
 
 #### 2. Signup 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_signup.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_signup.png?raw=true)
 
 The Signup page allows the researcher to create a Popper account and go through the steps necessary to begin running experiments online. 
 
@@ -430,7 +432,7 @@ The Signup form should contain the following fields:
 
 #### 3. Researcher Dashboard 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_dashboard.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_dashboard.png?raw=true)
 
 Once the researcher has completed signup, she will be taken to the Researcher Dashboard. Here, the researcher can see an overview of all her trials, as well as experiments that she is following. The Dashboard is divided into two main sections: the Feed and the list of their Trials.  
 
@@ -459,7 +461,7 @@ Each trial on this list should be accompanied by the following information:
 
 #### 4. Experiment Library 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_library.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_library.png?raw=true)
 
 The Experiment Library includes a list of all available experiments. We plan to launch with six stock experiments, each of which can be run with a different frame. The experiments should each be accompanied by an appropriate image, which we will provide. 
 
@@ -473,7 +475,7 @@ A clear link next to the experiment allows the researcher to "Create Trial".
 
 #### 5. Create Trial 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_trial.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_trial.png?raw=true)
 
 Once the researcher selects an experiment, she is shown a dynamically constructed form with the list of input parameters that the experiment accepts. Just like descriptions of experiments in the Library, this list of acceptable input parameters is taken from the metadata that accompanies the source code of the experiment. Typically, these parameters would include the necessary number of players, initial endowments of players, an exchange rate from in-game points to dollars that the subject receives, and the demographics of an acceptable subject pool.
 
@@ -481,13 +483,13 @@ Again, researchers without an account cannot access this page and will be redire
 
 #### 6. About 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_about.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_about.png?raw=true)
 
 Just a stock about page using the same template as the Landing Page.
 
 #### 7. Researcher Profile 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_profile.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_profile.png?raw=true)
 
 The Researcher Profile consists of the information that the researcher provided during the signup 
 process as well as privacy settings, payment method, and linked accounts (GitHub, Facebook, and Twitter).
@@ -496,7 +498,7 @@ This page also contains the history of all trials ever launched by the researche
 
 #### 8. Monitor Trials 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/rworkflow_monitor.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/rworkflow_monitor.png?raw=true)
 
 By default, upon creating a trial, the researcher is taken to the monitoring page of this trial. Alternatively, the researcher can find out more information about any trial displayed in the Trial List in the Researcher Dashboard by clicking on the trial. This also takes her to the Monitor Trials page. 
 
@@ -507,11 +509,11 @@ Once the trial is over, the researcher can see and manually approve all pending 
 
 ### Player Website 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_base.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_base.png?raw=true)
 
 #### 1. Signup 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_signup.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_signup.png?raw=true)
 
 Players will not be able to see available games (trials) unless they are signed in. We need to know precisely who is reviewing available trials. For this reason, the signup page is the landing page of the Player Website. Barriers to entry for the player should be minimal, especially since the player is most likely already arriving from an external site (Amazon Mechanical Turk or oDesk). The player should thus be able to create an account using an existing Facebook or Twitter account. The signup page should also be miminalistic in terms of data gathered from the player, asking only for a username, password, and the player's age. More in-depth demographic information will be gathered later, once the player has created an account--perhaps on a separate page, using the same template. This information will be used to determine which trials are visible to the player in the Lobby (2). 
 
@@ -519,25 +521,25 @@ Players who already have an account will use this page to log in.
 
 #### 2. Lobby 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_lobby.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_lobby.png?raw=true)
 
 Players who are visiting the site directly without having pre-selected a game to play will be take to the lobby to browse games (ongoing trials) for which they meet eligibility requirements. Sometimes, researchers will restrict participation in their trials by age, gender, geographic location, connection speed, or other factors. The graphics and UI/UX should compel the player to stay on the website to play as many games as possible. We envision perhaps a screenshot of each game to accompany a link to each of the games. Basic information also accompanies each game visible to the player in the lobby: pay, trial end date, number of current players, and a description of the game itself. All this information is dynamically pulled by the web application from the corresponding metadata on GitHub.
 
 #### 3. Game 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_game.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_game.png?raw=true)
 
 The player plays the game on this page. The game is embedded as an iframe, and its design is the responsibility of the researcher.
 
 #### 4. About 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_about.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_about.png?raw=true)
 
 Basic About page, perhaps reusing the same template as the Signup page. 
 
 #### 5. Player Profile 
 
-![Image](https://github.com/Experiments/popper-design/blob/master/pworkflow_profile.png?raw=true)
+![Image](https://github.com/Experiments/popper-design/blob/master/images/pworkflow_profile.png?raw=true)
 
 The player can view his history of games on the profile page, as well as manage his account 
 information and privacy settings. 
