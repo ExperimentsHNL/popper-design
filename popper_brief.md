@@ -8,11 +8,11 @@
 
 -   [Development Team](#DevelopmentTeam)
 
--	[Unity Programmer Brief](UnityProgrammerBrief)
+-	[Unity Programmer Brief](#UnityProgrammerBrief)
 
--	[Web Developer Brief](WebDeveloperBrief)
+-	[Web Developer Brief](#WebDeveloperBrief)
 
--	[Web Designer Brief](WebDesignerBrief)	 
+-	[Web Designer Brief](#WebDesignerBrief)	 
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
@@ -218,6 +218,8 @@ In addition to the Popper SDK, researchers will be provided with the following s
 3. It is vital to take advantage of the graphical assets available in the Unity ecosystem. Accordingly, we need to streamline the process of importing professional third-party games, adding Photon networking, and integrating them with our uScript-based backend. 
 
 4. We would like to keep the entry barrier for researchers as low as possible. Ideally, the Popper SDK should be compatible with the free version of Unity. At present, the Popper SDK relies on Unity Build API, which is only available in Unity Pro. We would like to find a way around this. 
+
+5. We would like ot be able to deploy games to as many Unity-supported platforms as possible (Windows/Mac, Webplayer, Flash, Android, and iOS). Some of these platforms impose restrictions on networking; we would like to streamline the process of overcoming these restrictions.
 
 ## <a name="WebDeveloperBrief" id="anchor2">Web Developer Brief</a> ##
 
