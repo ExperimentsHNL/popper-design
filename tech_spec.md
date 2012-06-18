@@ -31,11 +31,11 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 #### Process
 
 1. A feature is brainstormed, either by a developer or a non-developer.  
-2. Feature creator clones and branches the popper-feature-requests repository and commits all notes, drawings or other informal documents. 
+2. Feature creator clones and branches the popper-feature repository and commits all notes, drawings or other informal documents. 
 3. Feature creator writes a [functional spec](http://www.mojofat.com/tutorial/) and commits it to the repository branch.
 4. Feature creator hands off the spec to the **Project Manager**, who adds it to the Product Backlog.
 5. **Project Manager** assigns the feature to a developer(s).  **Developer** should only be assigned one feature at a time. 
-6. **Developer** pulls from the popper-feature-requests repository and checks out the associated feature branch.
+6. **Developer** pulls from the popper-feature repository and checks out the associated feature branch.
 7. **Developer** writes a tech spec, including a time estimate, and commits it to the feature branch.
 8. **Project Manager** approves tech spec.
 9. **Developer** branches Popper source.
