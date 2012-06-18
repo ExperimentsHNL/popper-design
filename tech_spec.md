@@ -14,7 +14,7 @@
 
 -	[popper-deploy](#PopperDeploy)
 
--   [Windows Server](#WindowsServer)	 
+-   [popper-windows-deploy](#PopperWindowsDeploy)	 
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
@@ -236,7 +236,7 @@ GET /deploy (:username, :repo)
 	- Uses Net/FTP to upload tarred binaries.
 	- Makes a request to the Sinatra app located on the windows server to start the masterclient.exe file.  
 
-## <a name="WindowsServer">Windows Server</a>
+## <a name="PopperWindowsDeploy">popper-windows-deploy</a>
 
 ### Deploy Masterclient
 
