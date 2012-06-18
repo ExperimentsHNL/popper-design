@@ -8,11 +8,11 @@
 
 -   [Development Team](#DevelopmentTeam)
 
--	[Unity Programmer Brief](UnityProgrammerBrief)
+-	[Unity Programmer Brief](#UnityProgrammerBrief)
 
--	[Web Developer Brief](WebDeveloperBrief)
+-	[Web Developer Brief](#WebDeveloperBrief)
 
--	[Web Designer Brief](WebDesignerBrief)	 
+-	[Web Designer Brief](#WebDesignerBrief)	 
 
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
