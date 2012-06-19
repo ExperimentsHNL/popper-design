@@ -29,9 +29,8 @@ It's extremely important to follow a rigorous development process in order to re
 It's important, even as **Popper** grows, to maintain a single line of communication between the development team and the **Project Manager**, who's in charge of communicating functional specs and aggregating information from many different sources, including: other non-developers, clients and advisors.
 
 #### Process
-
 1. A feature is brainstormed, either by a developer or a non-developer.  
-2. Feature creator clones and branches the popper-feature repository and commits all notes, drawings or other informal documents. 
+2. Feature creator clones and branches the popper-feature repository and commits all notes, drawings or other informal documents to a new folder. 
 3. Feature creator writes a [functional spec](http://www.mojofat.com/tutorial/) and commits it to the repository branch.
 4. Feature creator hands off the spec to the **Project Manager**, who adds it to the Product Backlog.
 5. **Project Manager** assigns the feature to a developer(s).  **Developer** should only be assigned one feature at a time. 
@@ -51,6 +50,28 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 1. When a bug is reported, **Project Manager** replicates it in a [Selenium](http://seleniumhq.org/) test.
 2. **Developer** fixes bug.
 3. When tests pass, **Project Manager** closes bug ticket..
+
+#### Github Workflow
+1. Clone the relevant repository that you'll be working in.
+2. Check out the development branch.
+	- git checkout --track origin/development
+3. Checkout a new branch named after your feature.
+	- git checkout -b my_cool\_feature
+4. Do work!
+5. Make sure you're up to date with the latest from the remote repository.
+	- git checkout development
+ 	- git pull
+6. Roll your changes on top of the development branch.
+	- git checkout my_cool\_feature
+ 	- git rebase -i development
+7. Merge changes back into the development branch.
+	- git checkout development
+ 	- git merge my_cool\_feature
+8. Push changes to the remote repository 
+	- git push origin development
+9. Delete your feature branch 
+	- git branch -d my_cool\_feature
+
 
 ### Style Guidelines
 
