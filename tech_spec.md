@@ -59,6 +59,7 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 3. Checkout a new branch named after your feature.
 	- git checkout -b my_cool\_feature
 4. Do work!
+
 5. Make sure you're up to date with the latest from the remote repository.
 	- git checkout development
  	- git pull
