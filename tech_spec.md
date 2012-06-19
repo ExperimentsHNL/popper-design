@@ -53,6 +53,7 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 
 #### Github Workflow
 1. Clone the relevant repository that you'll be working in.
+	- git clone git@github.com:Experiments/popper-**Service Repository**.git
 2. Check out the development branch.
 	- git checkout --track origin/development
 3. Checkout a new branch named after your feature.
@@ -71,7 +72,6 @@ It's important, even as **Popper** grows, to maintain a single line of communica
 	- git push origin development
 9. Delete your feature branch 
 	- git branch -d my_cool\_feature
-
 
 ### Style Guidelines
 
