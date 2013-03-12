@@ -14,6 +14,8 @@
 
 -	[Web Designer Brief](#WebDesignerBrief)	 
 
+-	[Mobile FB Authentication](#MobileFBAuth)
+
 ## <a name="Introduction" id="anchor4">Introduction</a> ##
 
 **Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create and conduct complex large-scale online experiments. 
@@ -543,3 +545,17 @@ Basic About page, perhaps reusing the same template as the Signup page.
 
 The player can view his history of games on the profile page, as well as manage his account 
 information and privacy settings. 
+
+## <a name="MobileFBAuth" id="anchor4">Mobile FB Authentication</a> ##
+
+Pass a hash to `/mauth/callback` that has:
+
+-	uid
+
+-	token
+
+-	expires
+
+-	expires_at
+
+-	email
